@@ -1,0 +1,10 @@
+Generic single-database configuration.
+
+Чтобы запустить автоматическую миграцию, нужно поменять app/models.py 
+и app/schemas.py файлы, добавив или убрав что-то. Потом команда 
+alembic revisions --autogenerate -m "name" должна делать дело. 
+
+Файл появится в alembic/versions, его надо читать, потому что автоматически
+не все всегда работает.
+
+Оф. документация: https://alembic.sqlalchemy.org/en/latest/
