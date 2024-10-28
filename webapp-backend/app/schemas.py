@@ -44,6 +44,7 @@ class UserUpdate(UserBase):
                 status_code=status.HTTP_409_CONFLICT,
                 detail="can't provide both password and hashed_password",
             )
+        return self
 
     class Config:
         from_attirbutes = True
